@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>resome-chu</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="top-bar">
+      <a href="#none" class="prev-btn"><img src="image/prev-icon.png" alt=""></a>
+      <div class="top-tit">결제하기</div>
+    </div>
+  
+    <div class="empty"></div>
+  
+    <div class="card-wrap">
+      <div class="class-card">
+        <div class="card-title">
+          <img src="image/info-icon.svg" alt="">
+          예약 정보
+        </div>
+        <div class="card-top">
+          <p class="class-title">[종로] 1대 1 메이크업클래스 내 이목구비, 분위기에 맞는 베스트 화장법 찾기</p>
+        </div>
+        <hr class="line"></hr>
+        <div class="card-bottom">
+          <div class="card-info">
+            <img src="image/location-pin-icon.svg" alt="">
+            종로구 종로3가
+          </div>
+          <div class="card-info">
+            <img src="image/user-check-icon.svg" alt="">
+            성인 2명
+          </div>
+          <div class="card-info">
+            <img src="image/clock-icon.svg" alt="">
+            2025.11.25 화요일, 오후 7시
+          </div>
+          <div class="info-more">
+            <p><span>옵션</span>데일리메이크업</p>
+            <p><span>요청사항</span>X</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="payment-s1 payment-sec">
+      <div class="sec-title">
+        쿠폰
+      </div>
+      <div class="sec-contents">
+        <div class="select_cus">
+          <input type="hidden" class="opt_val" value="">
+          <div class="trigger">
+            <span class="trigger_txt">쿠폰을 선택해주세요.</span>
+          </div>
+          <ul class="option">
+            <li data-value="">쿠폰을 선택해주세요.</li>
+            <li data-value="option1">2025 리솜 블프 홀리데이 10%</li>
+            <li data-value="option2">11월 장바구니 쿠폰 5%</li>
+            <li data-value="option3">11월 장바구니 쿠폰 3%</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="payment-s2 payment-sec">
+      <div class="sec-title">
+        포인트 사용 <span>내 포인트: 1,226p</span>
+      </div>
+      <div class="sec-contents">
+        <p class="text-box">최소 5,000p 이상 보유 시 사용 가능합니다.</p>
+      </div>
+    </div>
+    
+    <div class="payment-s3 payment-sec">
+      <div class="sec-title">
+        결제수단 <span class="essen">&#42;</span>
+      </div>
+      <div class="sec-contents">
+        <div class="method">
+          <p class="radio">
+            <input type="radio" id="mr1" name="methodradio" checked>
+            <label for="mr1">
+              솜씨페이
+            </label>
+            <input type="radio" id="mr2" name="methodradio">
+            <label for="mr2">
+              신용/체크카드
+            </label>
+            <input type="radio" id="mr3" name="methodradio">
+            <label for="mr3">
+              휴대폰
+            </label>
+            <input type="radio" id="mr4" name="methodradio">
+            <label for="mr4">
+              간편결제
+            </label>
+          </p>
+        </div>
+        <div class="simple">
+          <p class="radio">
+            <input type="radio" id="sr1" name="simpleradio" checked>
+            <label for="sr1">
+              <img src="image/kakaopay.png" alt="">
+            </label>
+            <input type="radio" id="sr2" name="simpleradio">
+            <label for="sr2">
+              <img src="image/naverpay.png" alt="">
+            </label>
+            <input type="radio" id="sr3" name="simpleradio">
+            <label for="sr3">
+              <img src="image/tosspay.jpg" alt="">
+            </label>
+            <input type="radio" id="sr4" name="simpleradio">
+            <label for="sr4">
+              <img src="image/samsungpay.jpg" alt="">
+            </label>
+            <input type="radio" id="sr5" name="simpleradio">
+            <label for="sr5">
+              <img src="image/payco.png" alt="">
+            </label>
+            <input type="radio" id="sr6" name="simpleradio">
+            <label for="sr6">
+              <img src="image/ssgpay.jpg" alt="">
+            </label>
+          </p>
+        </div>
+      </div>
+      <div class="check-box">
+        <input type="checkbox" id="check1">
+        <label for="check1" class="check-label">
+          <p>이 결제 수단을 다음에도 사용</p>
+        </label>
+      </div>
+    </div>
+    
+    <div class="payment-s4 payment-sec">
+      <div class="sec-title tab-title">
+        <div class="title-left">
+          최종 결제 금액
+          <img src="image/arrow-down-icon.svg" alt="" class="tab-icon">
+        </div>
+        <div class="title-right">102,171원</div>
+      </div>
+      <div class="sec-contents tab-contents">
+        <div class="price">
+          <div>클래스 금액</div>
+          <div>139,000원</div>
+        </div>
+        <div class="total-discount price tab-title">
+          <div>
+            총 할인 금액
+            <img src="image/arrow-down-icon.svg" alt="" class="tab-icon">
+          </div>
+          <div>-36,829원</div>
+        </div>
+        <div class="tab-contents mini">
+          <div class="price mini">
+            <div>클래스 할인</div>
+            <div>24,000원</div>
+          </div>
+          <div class="price mini">
+            <div>쿠폰 할인</div>
+            <div>11,500원</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="payment-s5 payment-sec">
+      <div class="sec-title tab-title">
+        <div class="title-left">
+          적립 혜택
+          <img src="image/arrow-down-icon.svg" alt="" class="tab-icon">
+        </div>
+        <div class="title-right">최대 3,621원</div>
+      </div>
+      <div class="sec-contents tab-contents">
+        <div class="price">
+          <div>기본 적립(1%)</div>
+          <div>1,021원</div>
+        </div>
+        <div class="price">
+          <div>일반 후기</div>
+          <div>100원</div>
+        </div>
+        <div class="price">
+          <div>사진/영상 후기</div>
+          <div>500원</div>
+        </div>
+        <div class="price">
+          <div>베스트 리뷰 선정</div>
+          <div>2,000원</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="payment-s6 payment-sec">
+      <div class="check-box">
+        <input type="checkbox" id="check2">
+        <label for="check2" class="check-label">
+          <p>아래 내용에 모두 동의합니다. <span class="essen">&#42;</span></p>
+        </label>
+      </div>
+      <div class="notice tab-title">
+        <p>클래스 환불 정책</p>
+        <img src="image/arrow-down-icon.svg" alt="" class="tab-icon">
+      </div>
+      <div class="tab-contents">
+        <h3>원데이클래스 환불정책</h3>
+        <p>
+          원데이클래스 환불은 수업시간이 아닌 일자를 기준으로 합니다.
+          <br>
+          1) 결제 후 1시간 이내 취소 시
+          100% 환불 (포인트, 쿠폰 복원)
+          (결제 후 1시간 이내 취소 시, 밤 12시 이전 취소시 100% 환불.
+          단, 당일 클래스는 1시간 이내 취소 시에도 환불 불가)
+          <br>
+          2) 클래스 6일 이전 취소 시
+          100% 환불 (포인트, 쿠폰 복원)
+          <br>
+          3) 클래스 5일 이전 취소 시
+          결제 금액의 5% 배상 후 환불 (포인트, 쿠폰 소멸)
+          <br>
+          4) 클래스 4일 이전 취소 시
+          결제 금액의 10% 배상 후 환불 (포인트, 쿠폰 소멸)
+          <br>    
+          5) 클래스 3일 이전 취소 시
+          결제 금액의 20% 배상 후 환불 (포인트, 쿠폰 소멸)
+          <br>    
+          6) 클래스 2일 이전 취소 시
+          결제 금액의 30% 배상 후 환불 (포인트, 쿠폰 소멸)
+          <br>    
+          7) 클래스 1일 이전 취소 시
+          환불 불가 (포인트, 쿠폰 소멸)
+          (단, 결제 후 1시간 이내 취소 시, 밤12시 이전 100% 환불)
+          * 티켓의 경우 최초 일정 하루 전 취소 시 최대 60% 환불까지 가능합니다.
+          <br>    
+          8) 클래스 당일 취소 시
+          환불 불가 (포인트, 쿠폰 소멸)
+          <br>    
+          9) 당일 클래스 구매시
+          환불 불가 (포인트, 쿠폰 소멸)
+          <br>    
+          10) 모집 인원 미달인 경우
+          클래스 48시간 이내 100% 환불
+        </p>
+      </div>
+      <div class="notice tab-title">
+        <p>개인정보 제 3자 제공</p>
+        <img src="image/arrow-down-icon.svg" alt="" class="tab-icon">
+      </div>
+      <div class="tab-contents">
+        <h3>1. 총칙</h3>
+        <p>
+          (주)솜씨당컴퍼니 (이하 “회사”)는 이용자의 개인정보 보호를 소중하게 생각하고, 이용자의 개인정보를 보호하기 위하여 항상 최선을 다해 노력하고 있습니다.
+          <br>
+          1. ”회사”는 「개인정보보호법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」을 비롯한 모든 개인정보보호 관련 법률규정을 준수하고 있으며, 관련 법령에 의거한 개인정보처리방침을 정하여 이용자 권익 보호에 최선을 다하고 있습니다.
+          <br>
+          2.  ”회사”는 개인정보처리방침을 제정하여 이를 준수하고 있으며, 이를 인터넷사이트 및 모바일 어플리케이션에 공개하여 이용자가 언제나 용이하게 열람할 수 있도록 하고 있습니다.
+        </p>
+        <h3>2. 개인정보의 수집방법 및 항목</h3>
+        <p>
+          솜씨당컴퍼니(주식회사 솜씨당컴퍼니)의 개인정보 수집 이용 목적은 다음과 같습니다.제공하는 서비스에 따라 개인정보의 수집목적, 항목, 보유 및 이용기간을 달리하여 서비스제공을 위하여 필요한 최소한의 개인정보를 수집하고 있습니다. 
+          <br>
+          1. 수집하는 개인정보의 항목
+          <br>
+          1) 회원가입 및 서비스 이용
+          <br>
+          (1) 국내 거주자의 경우
+          (2) 해외 거주자의 경우
+          (3) 간편로그인
+          <br>
+          2) 마케팅
+          <br>
+          3) 비회원
+          <br>
+          4) 서비스 운영 및 관리
+        </p>
+        <h3>3. 개인정보의 수집 및 이용목적</h3>
+        <p>
+          “회사”는 수집한 개인정보를 다음 목적을 위해 이용합니다. 수집한 개인정보는 다음의 목적 이외의 용도로는 이용하지 않으며, 이용 목적이 변경되는 경우에는 별도의 동의를 받습니다.
+          <br>
+          1. 서비스의 원활한 제공 및 운영    
+          <br>
+          콘텐츠 제공, 주문/결체 처리, 정산, 고객 상담 및 문의 응대 등 기본적인 서비스 제공을 위한 처리
+          <br>
+          2. 회원관리
+          <br>
+          회원제 서비스 이용, 개인식별, 불량회원의 부정 이용방지와 비인가 사용방지, 가입의사 확인, 가입 및 가입횟수 제한, 분쟁 조정을 위한 기록보존, 불만처리 등 민원처리, 고지사항 전달
+          <br>
+          3. 마케팅 및 광고에의 활용(선택 동의 시)
+          <br>
+          고객별 맞춤 서비스 제공, 통계학적 특성에 따른 서비스 제공 및 광고 게재, 정기 간행물 발송, 서비스의 유효성 확인, 이벤트 및 광고성 정보 제공 및 참여기회 제공, 접속빈도 파악, 회원의 서비스 이용에 대한 통계
+        </p>
+      </div>
+      <div class="notice tab-title">
+        <p>전자금융거래 이용약관</p>
+        <img src="image/arrow-down-icon.svg" alt="" class="tab-icon">
+      </div>
+      <div class="tab-contents">
+        <h3>제1장 총칙</h3>
+        <p>
+          <b>제1조(목적)</b> 본 약관은 솜씨당컴퍼니(이하 "회사"라 합니다)가 제공하는 전자지급결제대행서비스 및 결제대금예치서비스, 선불전자지급수단 발행 및 관리 서비스(이하 통칭하여 “전자금융거래서비스”라 합니다)를 회원이 이용함에 있어 회사와 회원 사이의 전자금융거래에 관한 기본적인 사항을 정함을 목적으로 합니다.
+          <br><br>
+          <b>제2조 (용어의 정의)</b><br>
+          본 약관에서 정하는 용어의 정의는 다음과 같으며, 본 조 및 본 약관에서 별도로 정의하지 아니한 용어의 정의는 「전자금융거래법」 등 관련법령이 정한 바에 의합니다.<br>
+          1. "전자금융거래"라 함은 회사가 전자적 장치를 통하여 전자금융거래서비스를 제공하고, 회원이 회사의 종사자와 직접 대면하거나 의사소통을 하지 아니하고 자동화된 방식으로 이를 이용하는 거래를 말합니다.<br>
+          2. “전자지급거래”라 함은 자금을 주는 자(이하 “지급인”이라고 합니다)가 회사로 하여금 전자지급수단을 이용하여 자금을 받는 자(이하 “수취인”이라고 합니다)에게 자금을 이동하게 하는 전자금융거래를 말합니다.<br>
+          3. “전자지급수단”이라 함은 선불전자지급수단, 신용카드 등 「전자금융거래법」 제2조 제11호에서 정하는 전자적 방법에 따른 지급수단을 말합니다.<br>
+          4. “전자적 장치”라 함은 전자금융거래정보를 전자적 방법으로 전송하거나 처리하는데 이용되는 장치로서 현금자동지급기, 자동입출금기, 지급용 단말기, 컴퓨터, 전화기 그 밖에 전자적 방법으로 정보를 전송하거나 처리하는 장치를 말합니다.
+          5. “전자문서"라 함은 「전자문서 및 전자거래 기본법」 제2조제1호에 따른 정보처리시스템에 의하여 전자적 형태로 작성, 송신ㆍ수신 또는 저장된 정보를 말합니다.<br>
+          6. "회원"이라 함은 이 약관에 동의하고 회사가 제공하는 전자금융거래서비스를 이용하는 자를 말합니다.<br>
+          7. "아이디"란 "회원"의 식별과 서비스 이용을 위하여 "회원"이 설정하고 "회사"가 승인한 숫자와 문자의 조합을 말합니다.<br>
+          8. “비밀번호”라 함은 회원의 동일성 식별과 회원 정보의 보호를 위하여, 회원이 설정하고 회사가 승인한 숫자와 문자의 조합을 말합니다<br>
+          9. "접근매체"라 함은 전자금융거래에 있어서 거래지시를 하거나 회원 및 거래내용의 진실성과 정확성을 확보하기 위하여 사용되는 수단 또는 정보로서 전자식 카드 및 이에 준하는 전자적 정보(신용카드번호를 포함한다), 「전자서명법」 상의 인증서, 회사에 등록된 회원번호, 회원의 생체정보, 이상의 수단이나 정보를 사용하는데 필요한 비밀번호 등 전자금융거래법 제2조 제10호에서 정하고 있는 것을 말합니다.<br>
+          10. "거래지시"라 함은 회원이 본 약관에 의하여 체결되는 전자금융거래계약에 따라 회사에 대하여 전자금융거래의 처리를 지시하는 것을 말합니다.<br>
+          11. "오류"라 함은 회원의 고의 또는 과실 없이 전자금융거래가 전자금융거래계약 또는 회원의 거래지시에 따라 이행되지 아니한 경우를 말합니다.
+        </p>
+      </div>
+    </div>
+  
+    <div class="full-btn">
+      <button class="button2"><a href="#none">결제하기</a></button>
+    </div>
+  </div>
+  
+  
+  
+  <!-- Script Source -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/payment.js"></script>
+</body>
+</html>

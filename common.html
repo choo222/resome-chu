@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Common Elements</title>
+  <link rel="stylesheet" href="assets/common.css">
+</head>
+<body>
+  
+  <h1>Common Elements</h1>
+  <h2>Typography</h2>
+
+  <h3 class="main-title"> main title </h3>
+  <h3 class="sub-title"> sub title </h3>
+  <h3 class="button-tag"> button tag </h3>
+
+  <h2>Card Typography</h2>
+  <p class="card-title"> card title </p>
+  <p class="card-desc"> card desc</p>
+  <p class="card-location"> card location</p>
+  <p class="card-review"> card review</p>
+  <span class="card-discount"> card discount </span>
+  <span class="card-price"> card price </span>
+
+  <h2>Color</h2>
+  <div class="primary-bg"> primary background</div>
+  <div class="primary-sub-bg"> primary sub background</div>
+  <div class="secondary-bg"> secondary background</div>
+  <div class="secondary-sub-bg"> secondary sub background</div>
+  <div class="light-gray-bg1"> light gray background1</div>
+  <div class="light-gray-bg2"> light gray background2</div>
+
+  <h2>Button</h2>
+  <div class="button"><a href="#">Button</a></div>
+  <div class="button2"><a href="#">Button2</a></div>
+
+  <h2>Card</h2>
+  <div class="card">   
+    <div class="card-inner">
+      <div class="card-img">
+        <img src="/image/BEST3.jpg" alt="cardimg">
+      </div>
+      <div class="card-txt">
+        <ul>
+          <li>원데이 · 강남구 신사동</li>
+          <li>[가로수길] 트윌리스카프 연출법</li>
+          <li>100% 만족 (2)</li>
+        </ul>
+        <div class="text-inner">
+          <p>18,000원</p>
+        </div>
+        <div class="card-review">
+        <span>후기이벤트</span>
+        </div>
+      </div>
+      <button class="add-to-wish">
+        <img src="/image/icon/hearticon.png" alt="wish icon">
+      </button>
+    </div>
+  </div>
+
+  <!-- 영화 추천 이미지 카드 -->
+
+  <div class="swiper-slide">
+    <a href="https://watcha.com/contents/mAd7zBO?search_id=a02ddfe7-246c-9ccd-b24a-b5a48392ff81" target="_blank"><img src="/image/BEST3.jpg" alt="poster">
+    </a>
+  </div>
+
+  <!-- 하트 클릭 JS -->
+  <!-- 
+    const wishBtn = document.querySelectorAll('.card-inner .add-to-wish');
+  wishBtn.forEach(item => {
+    item.addEventListener('click', ()=>{
+      item.classList.toggle('active');
+    });
+  });
+  -->
+
+</body>
+</html>

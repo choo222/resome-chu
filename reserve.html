@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>resome-chu</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reserve.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="top-bar">
+      <a href="#none" class="prev-btn"><img src="image/prev-icon.png" alt=""></a>
+      <div class="top-tit">예약</div>
+    </div>
+  
+    <div class="empty"></div>
+  
+    <div class="card-wrap">
+      <div class="class-card">
+        <div class="class-img"></div> 
+        <div class="class-text">
+          <div class="class-place">원데이 · 종로구 종로3가</div>
+          <p class="class-title">[종로] 1대 1 메이크업클래스 내 이목구비, 분위기에 맞는 베스트 화장법 찾기</p>
+          <p class="class-price">
+            <span>17&#37;</span> 115,000원
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="reserve-s1 reserve-sec">
+      <div class="sec-title">
+        <img src="image/info-icon.svg" alt="">
+        예약자 정보 <span class="essen">&#42;</span>
+      </div>
+      <div class="sec-contents">
+        <div>이름</div>
+        <input type="text" placeholder="이름을 입력해주세요." class="text-box">
+      </div>
+    </div>
+    
+    <div class="reserve-s2 reserve-sec">
+      <div class="sec-title">
+        <img src="image/usercount.icon.svg" alt="">
+        방문 인원 <span class="essen">&#42;</span>
+      </div>
+      <div class="sec-contents">
+        <div class="qty-wrap">
+          성인
+          <div class="qty">
+            <button type="button" class="minus">
+              <img src="image/minus-icon.svg" alt="minus button">
+            </button>
+            <input type="text" name="qty" value="1">
+            <button type="button" class="plus">
+              <img src="image/plus-icon.svg" alt="plus button">
+            </button>
+          </div>
+        </div>
+        <div class="qty-wrap">
+          아동
+          <div class="qty kid">
+            <button type="button" class="minus">
+              <img src="image/minus-icon.svg" alt="minus button">
+            </button>
+            <input type="text" name="qty" value="0">
+            <button type="button" class="plus">
+              <img src="image/plus-icon.svg" alt="plus button">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="reserve-s3 reserve-sec">
+      <div class="sec-title">
+        <img src="image/date-icon.svg" alt="">
+        방문 일정 <span class="essen">&#42;</span>
+      </div>
+      
+      <div class="swiper-container">
+        <div class="date swiper mySwiper">
+          <p class="date-radio swiper-wrapper">
+            <input type="radio" id="dr1" name="dateradio" checked>
+            <label for="dr1" class="swiper-slide">
+              오늘<span>20</span>
+            </label>
+            <input type="radio" id="dr2" name="dateradio">
+            <label for="dr2" class="swiper-slide">
+              금<span>21</span>
+            </label>
+            <input type="radio" id="dr3" name="dateradio">
+            <label for="dr3" class="swiper-slide">
+              토<span>22</span>
+            </label>
+            <input type="radio" id="dr4" name="dateradio">
+            <label for="dr4" class="swiper-slide">
+              일<span>23</span>
+            </label>
+            <input type="radio" id="dr5" name="dateradio">
+            <label for="dr5" class="swiper-slide">
+              월<span>24</span>
+            </label>
+            <input type="radio" id="dr6" name="dateradio">
+            <label for="dr6" class="swiper-slide">
+              화<span>25</span>
+            </label>
+            <input type="radio" id="dr7" name="dateradio">
+            <label for="dr7" class="swiper-slide">
+              수<span>26</span>
+            </label>
+            <input type="radio" id="dr8" name="dateradio">
+            <label for="dr8" class="swiper-slide">
+              목<span>27</span>
+            </label>
+            <input type="radio" id="dr9" name="dateradio">
+            <label for="dr9" class="swiper-slide">
+              금<span>28</span>
+            </label>
+            <input type="radio" id="dr10" name="dateradio">
+            <label for="dr10" class="swiper-slide">
+              토<span>29</span>
+            </label>
+            <input type="radio" id="dr11" name="dateradio">
+            <label for="dr11" class="swiper-slide">
+              일<span>30</span>
+            </label>
+            <input type="radio" id="dr12" name="dateradio">
+            <label for="dr12" class="swiper-slide">
+              12월<span>1</span>
+            </label>
+            <input type="radio" id="dr13" name="dateradio">
+            <label for="dr13" class="swiper-slide">
+              화<span>2</span>
+            </label>
+          </p>
+        </div>
+      </div>
+    
+      <div class="tab-container">
+        <div class="tab-menu">
+          <ul class="btn">
+            <li data-alt="tab1" class="active">전체</li>
+            <li data-alt="tab2">오전</li>
+            <li data-alt="tab3">오후</li>
+          </ul>
+        </div>
+        <div class="tab-contents">
+          <div id="tab1" class="active">
+            <div class="time-all">
+              <p class="radio">
+                <input type="radio" id="r1" name="radioname" checked>
+                <label for="r1">
+                  09:00
+                </label>
+                <input type="radio" id="r2" name="radioname">
+                <label for="r2">
+                  10:00
+                </label>
+                <input type="radio" id="r3" name="radioname">
+                <label for="r3">
+                  11:00
+                </label>
+                <input type="radio" id="r4" name="radioname">
+                <label for="r4">
+                  12:00
+                </label>
+                <input type="radio" id="r5" name="radioname">
+                <label for="r5">
+                  13:00
+                </label>
+                <input type="radio" id="r6" name="radioname">
+                <label for="r6">
+                  14:00
+                </label>
+                <input type="radio" id="r7" name="radioname">
+                <label for="r7">
+                  15:00
+                </label>
+                <input type="radio" id="r8" name="radioname">
+                <label for="r8">
+                  16:00
+                </label>
+                <input type="radio" id="r9" name="radioname">
+                <label for="r9">
+                  17:00
+                </label>
+                <input type="radio" id="r10" name="radioname">
+                <label for="r10">
+                  18:00
+                </label>
+                <input type="radio" id="r11" name="radioname">
+                <label for="r11">
+                  19:00
+                </label>
+              </p>
+            </div>
+          </div>
+          <div id="tab2">
+            <div class="time-am">
+              <p class="radio">
+                <input type="radio" id="r12" name="radioname">
+                <label for="r12">
+                  9:00
+                </label>
+                <input type="radio" id="r13" name="radioname">
+                <label for="r13">
+                  10:00
+                </label>
+                <input type="radio" id="r14" name="radioname">
+                <label for="r14">
+                  11:00
+                </label>
+              </p>
+            </div>
+          </div>
+          <div id="tab3">
+            <div class="time-pm">
+              <p class="radio">
+                <input type="radio" id="r15" name="radioname">
+                <label for="r15">
+                  12:00
+                </label>
+                <input type="radio" id="r16" name="radioname">
+                <label for="r16">
+                  13:00
+                </label>
+                <input type="radio" id="r17" name="radioname">
+                <label for="r17">
+                  14:00
+                </label>
+                <input type="radio" id="r18" name="radioname">
+                <label for="r18">
+                  15:00
+                </label>
+                <input type="radio" id="r19" name="radioname">
+                <label for="r19">
+                  16:00
+                </label>
+                <input type="radio" id="r20" name="radioname">
+                <label for="r20">
+                  17:00
+                </label>
+                <input type="radio" id="r21" name="radioname">
+                <label for="r21">
+                  18:00
+                </label>
+                <input type="radio" id="r22" name="radioname">
+                <label for="r22">
+                  19:00
+                </label>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="reserve-s4 reserve-sec">
+      <div class="sec-title">
+        <img src="image/check-icon.svg" alt="">
+        옵션
+      </div>
+      <div class="sec-contents">
+        <div>필수옵션 <span class="essen">&#42;</span></div>
+        <div class="select_cus">
+          <input type="hidden" class="opt_val" value="">
+          <div class="trigger">
+            <span class="trigger_txt">옵션을 선택해주세요.</span>
+          </div>
+          <ul class="option">
+            <li data-value="">옵션을 선택해주세요.</li>
+            <li data-value="option1">데일리 메이크업</li>
+            <li data-value="option2">왕초보 데일리 메이크업(120분 수업)</li>
+            <li data-value="option3">스페셜 메이크업(촬영용)</li>
+            <li data-value="option4">웨딩 메이크업</li>
+            <li data-value="option5">남성 메이크업</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sec-contents">
+        <div>선택옵션</div>
+        <div class="select_cus">
+          <input type="hidden" class="opt_val" value="">
+          <div class="trigger">
+            <span class="trigger_txt">옵션을 선택해주세요.</span>
+          </div>
+          <ul class="option">
+            <li data-value="">옵션을 선택해주세요.</li>
+            <li data-value="option1">속눈썹 수업 (+30분)</li>
+            <li data-value="option2">오버립 수업 (+30분)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <div class="reserve-s5 reserve-sec">
+      <div class="sec-title">
+        <img src="image/info-icon.svg" alt="">
+        요청 사항
+      </div>
+      <div class="sec-contents">
+        <input type="text" placeholder="요청사항을 입력해주세요." class="text-box">
+      </div>
+    </div>
+  
+    <div class="full-btn">
+      <button class="button2"><a href="#none">결제하기</a></button>
+    </div>
+  </div>
+  
+  
+  
+  <!-- Script Source -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/reserve.js"></script>
+</body>
+</html>

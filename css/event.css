@@ -1,0 +1,380 @@
+*{scroll-behavior: smooth;}
+
+.container{
+  width: 100%;
+  height: max-content;
+}
+
+/* swiper plugin start_____________________________________ */
+    .swiper-container{
+      position: relative;
+      height: 110%;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+      .swiper-slide {
+        background: transparent;
+        width: 28rem !important;
+    }
+    .swiper-slide .card-inner{
+      display: block;
+      height: 100%;
+    }
+
+    .card{border: 1px solid rgba(0, 0, 0, 0.1);box-shadow: none;}
+/* ___________________________________end */
+
+/* 공통 */
+.main-title.event{
+  font-size: 4rem;
+  text-align: center;
+  line-height: 5rem;
+}
+
+/* sec-title 공통 */
+.sec-title{
+  position: relative;
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  background-color: var(--primary);
+  border-radius: 8rem;
+  font-weight: var(--bold);
+  text-indent: 3.5rem;
+  color: #fff;
+}
+.sec-title:before{
+  content: '';
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background: url(../image/gift-white-icon.png) no-repeat center;
+  left: 3rem;
+}
+
+/* top-bar_______________________________________________________________ */
+.top-bar{
+  position: fixed;
+  width: 100%;
+  height: 7.4rem;
+  background-color: var(--white);
+  /* background: linear-gradient(to bottom, white 0%, transparent 100%); */
+  border-bottom: 1px solid var(--light-gray2);
+  z-index: 100;
+}
+.top-bar .prev-btn{
+  position: absolute;
+  top: 2.2rem;
+  left: 2.2rem;
+}
+.top-bar .top-tit{
+  font-size: 2.6rem;
+  font-weight: var(--medium);
+  line-height: 7.5rem;
+  text-align: center;
+}
+
+/* event-visual_______________________________________________________________ */
+.event-visual{
+  position: relative;
+  width: 64rem;
+  height: 75rem;
+}
+.visual-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.visual-image img{width: 100%;}
+
+.event-visual:after{
+  content: '';
+  background: url(../image/santa.png) no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 37rem;
+  left: 13.4rem;
+  z-index: 1;
+}
+.event-visual .text-wrap{
+  position: absolute;
+  top: 13.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.event-visual .text-wrap .sub-title{
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.event-visual .text-wrap .sub-title.date{font-weight: 400;}
+
+/* event-s1_______________________________________________________________ */
+
+.event-s1{
+  position: relative;
+  color: var(--white);
+  border-radius: 3rem 3rem 0 0;
+  background: linear-gradient(178deg, #3E844E 1.15%, #246633 98.23%);
+  /* position: absolute; */
+  width: inherit;
+  height: max-content;
+  text-align: center;
+  overflow: hidden; 
+}
+.event-s1 .bg{position: absolute;}
+.event-s1 .bg div:nth-child(2){position: absolute; top: 15rem; left: 5.5rem;}
+.event-s1 .topbg{position: absolute;}
+.event-s1 .topbg div{position: absolute;}
+.event-s1 .topbg div:nth-child(1){
+  top: -0.4rem;
+  left: 1.3rem;
+  animation: updown 2s ease-in-out alternate infinite;
+}
+.event-s1 .topbg div:nth-child(2){
+  top: 0rem;
+  left: 6.5rem;
+  animation: updown 2s ease-in-out alternate infinite;
+  animation-delay: 1s;
+}
+.event-s1 .topbg div:nth-child(3){
+  top: -2.4rem;
+  left: 15.6rem;
+  animation: updown 2s ease-in-out alternate infinite;
+  animation-delay: 4.2s;
+}
+.event-s1 .topbg div:nth-child(4){
+  top: -2rem;
+  left: 42.6rem;
+  animation: updown 3s ease-in-out alternate infinite;
+  animation-delay: 2s;
+}
+.event-s1 .topbg div:nth-child(5){
+  top: -0.7rem;
+  left: 49.3rem;
+  animation: updown 2s ease-in-out alternate infinite;
+  animation-delay: 0.8s;
+}
+.event-s1 .topbg div:nth-child(6){
+  top: 0rem;
+  left: 55.8rem;
+  animation: updown 2s ease-in-out alternate infinite;
+  animation-delay: 5s;
+}
+
+@keyframes updown{
+  0%{transform: translateY(0rem);}
+  100%{transform: translateY(-4.5rem);}
+}
+
+.event-s1 .sec-title{margin: 9.7rem auto 2.7rem;}
+.event-s1 .main-title.event{margin: 0.7rem 0 1.7rem 0;}
+.event-s1 .sub-title{color: var(--white);}
+
+.socks-box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem 2rem;
+  background-color: rgba(255,255,255,0.15);
+  padding: 6rem 6rem;
+  margin: 3rem 2.2rem 4.5rem;
+  border-radius: 4rem;
+  backdrop-filter: blur(6.849999904632568px);
+}
+.socks-box img{
+  width: 15rem;
+  height: 15rem;
+  /* border: 1px solid #000; */
+}
+
+.button.event-btn{
+  background-color: rgba(255,255,255,0.15);
+  border: 1px solid var(--white);
+  color: var(--white);
+  margin: 0 2.2rem 6rem;
+}
+.button.event-btn a{
+  width: 100%;
+  height: 100%;
+  line-height: 7rem;
+  border-radius: inherit;
+}
+
+.info-box{
+  background-color: rgba(0,0,0,0.3);
+  text-align: left;
+  padding: 4.5rem 0 4rem 4rem;
+
+}
+.info-box div{
+  font-size: 2.2rem;
+  font-weight: var(--bold);
+  margin-bottom: 2.2rem;
+}
+.info-box p{
+  position: relative;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+.info-box p:before{
+  content: '';
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--white);
+  top: 50%;
+  left: -1.5rem;
+  transform: translateY(-50%);
+}
+
+/* event-s2___________________________________________________ */
+.event-s2{position: relative;overflow: hidden;}
+.event-s2 .bg{
+  position: absolute;
+  background: url(../image/event-s2-bg.svg) no-repeat center/contain;
+  width: 76rem;
+  height: 16rem;
+  top: -8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.event-s2 .sec-title{
+  color: var(--primary);
+  background-color: var(--white);
+  border: 0.2rem solid var(--primary);
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 13.8rem;
+}
+.event-s2 .sec-title:before{
+  background: url(../image/gift-color-icon.png) no-repeat center;
+  
+}
+.event-s2 .main-title.event{margin: 2.5rem 0 5.6rem 0;}
+
+/* theme cards */
+.theme-cards{
+  color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 0 2.2rem 5rem;
+}
+.theme-card{
+  position: relative;
+  width: 29rem;
+  height: 29rem;
+  border-radius: 3rem;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.theme-card:after{
+  position: absolute;
+  width: 18rem;
+  height: 13rem;
+  left: 0;
+  top: 0;
+  font-size: 3rem;
+  font-weight: var(--bold);
+  text-indent: 1.5rem;
+  line-height: 2.2;
+  background-color: var(--primary);
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+.theme-cake:after{content: '~53%';}
+.theme-tree:after{content: '~48%';}
+.theme-draw:after{content: '~50%';}
+.theme-doll:after{content: '~45%';}
+
+.theme-card .card-img{
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+.theme-cake .card-img{background: url(../image/theme-card1.jpg) no-repeat center/cover;}
+.theme-tree .card-img{background: url(../image/theme-card2.jpg) no-repeat center/cover;}
+.theme-draw .card-img{background: url(../image/theme-card3.jpg) no-repeat center/cover;}
+.theme-doll .card-img{background: url(../image/theme-card4.jpg) no-repeat center/cover;}
+
+.theme-card .card-img:after{
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+}
+
+.theme-card p{
+  position: absolute;
+  text-align: end;
+  right: 3.5rem;
+  bottom: 2.5rem;
+  font-size: 2.4rem;
+  font-weight: var(--bold);
+}
+
+/* class-wrap */
+.class-wrap{padding: 7.5rem 0 0;}
+#c-doll{padding: 7.5rem 0 10rem;}
+.class-title{margin: 0 0 3rem 2.2rem;}
+
+.class-title .main-title{font-family: "Noto Sans KR", sans-serif;}
+
+.cards{
+  width: max-content;
+  display: flex;
+  gap: 1.5rem;
+}
+.cards .card:nth-child(1){margin-left: 2.2rem;}
+
+/* event-s3___________________________________________________ */
+
+.event-s3{
+  background-color: #1d1d1d;
+}
+.event-s3 .sec-title{
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 4.5rem auto 3.7rem;
+}
+.event-s3 .main-title.event{
+  margin-bottom: 5rem;
+  color: #fff;
+}
+.event-s3 .main-title.event span{color: var(--primary);}
+
+/* 영화 추천 이미지 카드 */
+.movie-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+  padding-bottom: 7rem;
+}
+.movie-card{
+  position: relative;
+  width: 18rem;
+  height: 26.8rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px 0 rgba(255,255,255,0.3);
+  display: flex;
+  overflow: hidden;
+}
+.movie-card a{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.movie-card a img{
+  width: 100%;
+  height: 100%;
+}
+
+
